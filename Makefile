@@ -51,3 +51,14 @@ seed:
 
 generate-key:
 	docker-compose run --rm php-cli php artisan key:generate
+
+ide-helper-generate:
+	docker-compose run --rm php-cli composer ide-helper-generate
+
+ide-helper-models:
+	docker-compose run --rm php-cli composer ide-helper-models
+
+ide-helper-meta:
+	docker-compose run --rm php-cli composer ide-helper-meta
+
+ide-helper: ide-helper-generate ide-helper-models ide-helper-meta
