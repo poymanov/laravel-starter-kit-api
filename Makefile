@@ -62,3 +62,9 @@ ide-helper-meta:
 	docker-compose run --rm php-cli composer ide-helper-meta
 
 ide-helper: ide-helper-generate ide-helper-models ide-helper-meta
+
+php-codesniffer:
+	docker-compose run --rm php-cli composer phpcs
+
+php-codesniffer-fix:
+	docker-compose run --rm php-cli composer phpcbf
