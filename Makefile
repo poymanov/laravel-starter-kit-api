@@ -71,3 +71,5 @@ php-codesniffer-fix:
 
 phpstan:
 	docker-compose run --rm php-cli composer phpstan
+
+lint: php-codesniffer phpstan
