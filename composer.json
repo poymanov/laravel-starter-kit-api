@@ -18,6 +18,7 @@
         "fakerphp/faker": "^1.9.1",
         "mockery/mockery": "^1.4.2",
         "nunomaduro/collision": "^5.0",
+        "nunomaduro/larastan": "^0.7.11",
         "phpunit/phpunit": "^9.3.3",
         "squizlabs/php_codesniffer": "^3.6"
     },
@@ -39,6 +40,7 @@
         "ide-helper-meta": "php artisan ide-helper:meta",
         "phpcs": "phpcs",
         "phpcbf": "phpcbf",
+        "phpstan": "phpstan analyse",
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi"

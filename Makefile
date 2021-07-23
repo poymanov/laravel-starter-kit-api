@@ -68,3 +68,6 @@ php-codesniffer:
 
 php-codesniffer-fix:
 	docker-compose run --rm php-cli composer phpcbf
+
+phpstan:
+	docker-compose run --rm php-cli composer phpstan
